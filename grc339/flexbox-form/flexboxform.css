@@ -3,8 +3,8 @@
 
 body {
 	font-family: sans-serif;
-	line-height: 1.3em;
-	color: #000000;
+	line-height: 1.4em;
+	color: #222;
 	background-color: #ffffff;
 	box-sizing: border-box;
 
@@ -81,7 +81,7 @@ body {
  
  
  section {
-	background: #ffffff;
+	background: #eee;
 	padding: 1em;
 	margin-bottom: 1em;
 	font-family: sans-serif;
@@ -99,7 +99,7 @@ body {
 	width: 100%;
 	box-sizing: border-box;
 	height: 6em;
-	background: #f9f8f8;
+	background: #fcfcfc;
 	border: 1px solid #ccc;
 	padding: 0.4em;
 	font-family: sans-serif;
