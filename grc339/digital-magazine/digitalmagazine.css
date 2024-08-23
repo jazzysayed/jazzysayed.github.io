@@ -1,202 +1,109 @@
-/*CSS document*/
-
-html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
-
-div.container, div.home-container {
-    max-width:40em;
-    margin: auto;
-}
-
-h1{ 
-    width: 6em;
-    margin: 1em 0.5em;
-}
-
-h2{
-    color: #557799;
-    font-weight: bold;
-    margin-top: 0.25em;
-}
-
-a {
-    color: #000000;
-    text-decoration: none;
-}
-
-nav ul{
-    margin: 0 0 1em 0.5em;
-}
-
-nav ul li{
-    list-style-type: none;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin: 0.2em 0.5em 0.2em 0;
-}
-
-nav ul li a{
-    color: #557799;
-}
-
-section {
-    padding-bottom: 1em;
-}
-
-img {
-    width: 100%;
-    display: block;
-}
-
-p { 
-    font-family: sans-serif;
-    margin: 0.1em 0.5em 1em;
-}
-
-footer{
-    background-color: #557799;
-    color: white;
-    height: 2rem;
-    padding: 1em 0 0 0.5em;
-}
-
-footer p{
-    margin: 0;
-}
-
-section.mainstory h2, article h2 {
-    margin-left: 0.15em;
-    font-size: 3em;
-}
-
-section.secondarystory h2 {
-    font-size: 1.7em;
-    margin-left: 0.25em;
-}   
-
-section.tertiarystory{
-    margin: 0 0.5em;
-    border-top: 2px #557799 solid;
-}
-
-section.tertiarystory h2, aside h2{
-    font-size: 1.2em;
-}
-
-section.tertiarystory p, aside p{
-    margin-left: 0;
-}
-
-figcaption {
-    font-family: sans-serif;
-    font-style: italic;
-    color: #555555;
-    margin: 0.5em 0.5em 1.5em;
-}
-
-aside{
-    background-color: #cbcfff;
-    padding: 0.5em;
-}
-
-@media screen and (min-width: 35em) {
-    nav ul li {
-        display: inline-block;
-    }
-
-    h1, nav ul, p, section.mainstory h2, article h2, section.secondarystory h2, figcaption{
-        margin-left: 0;
-    }
-
-    section.tertiarystory{
-        margin: 0;
-    }
-}
-
-@media only screen and (min-width: 60em){
-    div.home-container{
-        max-width: 80em;
-        padding: 0 1em;
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-gap: 1em;
-    }
-
-    div.container{
-        max-width: 60em;
-        padding: 0 1em;
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-gap: 1em;
-    }
-
-    header, footer{
-        grid-column: 1/3;
-    }
-
-    div.home-container main{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1em;
-    }
-
-    div.home-container aside{
-        background: none;
-        padding-top: 0;
-    }
-    
-    section.mainstory{
-        grid-column: 2/4;
-        grid-row: 1/3;
-        display: flex;
-    }
-
-    section.mainstory a{
-        flex: 1 0 12em;
-        display: flex;
-        flex-direction: column;
-    }
-
-    section.mainstory a fig{
-        flex: 1 0 12em;
-        display: flex;
-    }
-
-    section.mainstory a fig img{
-        object-fit: cover;
-    }
-
-    section.mainstory a h2{
-        flex: 0 0 1em;
-    }
-
-    section.mainstory a p{
-        flex: 0 0 4em;
-    }
-
-    section.secondarystory{
-        display: flex;
-    }
-
-    section.secondarystory a{
-        flex: 1 0 12em;
-        display: flex;
-        flex-direction: column;
-    }
-
-    section.secondarystory a fig{
-        flex: 1 0 12em;
-        display: flex;
-    }
-
-    section.secondarystory a fig img{
-        object-fit: cover;
-    }
-
-    section.secondarystory a h2{
-        flex: 0 0 1em;
-    }
-
-    section.secondarystory a p{
-        flex: 0 0 4em;
-    }
-}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="digitalmagazine.css">
+        <title>Jasmine Sayed</title>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+        <meta http-equiv="Pragma" content="no-cache"/>
+        <meta http-equiv="Expires" content="0"/>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>
+                    <a href="index.html">
+                        <img src="logo.svg" alt="logo">
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Style</a>
+                        </li>
+                        <li>
+                            <a href="#">Music</a>
+                        </li>
+                        <li>
+                            <a href="#">Wellbeing</a>
+                        </li>
+                        <li>
+                            <a href="mainstory.html">Sports</a>
+                        </li>
+                        <li>
+                            <a href="#">Opinion</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <article>
+                <div class="mainstory">
+                    <figure>
+                        <img src="soccer-1.jpg" alt=" ">
+                        <figcaption>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</figcaption>
+                    </figure>
+                    <h2>Story about soccer</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar fringilla euismod. Aliquam erat volutpat. Aliquam lobortis erat nec risus vehicula fermentum. Vivamus scelerisque lobortis quam. Duis ac pulvinar risus. Etiam porttitor a lorem a pulvinar. Cras et nisl erat. Sed eu nunc eget est scelerisque dignissim. Proin eget pellentesque dolor. Praesent vel tincidunt risus. Curabitur tincidunt ipsum nunc, eu molestie ipsum consectetur at. Donec non risus a lacus mollis viverra at vitae quam. Aenean sit amet dui nunc. Nulla sed risus odio. Nulla justo velit, feugiat ac tellus vel, malesuada tempus eros. Sed at rhoncus purus.</p>
+                    <p>Cras ullamcorper turpis eget ipsum sodales, sit amet lacinia libero vulputate. Donec quis dolor pretium, fermentum dui a, imperdiet ligula. Curabitur vehicula lacinia malesuada. Nunc magna ligula, imperdiet vitae sagittis et, euismod id ante. Sed finibus mi non massa ultrices, a euismod elit euismod. Proin ut eleifend metus, auctor eleifend purus. Aliquam ullamcorper, neque at ullamcorper commodo, augue metus placerat risus, ut porttitor neque massa et risus. Maecenas ultrices purus ut neque mollis efficitur. Quisque sollicitudin ultricies laoreet. Donec lobortis posuere elit et accumsan. Etiam quis tellus nec ipsum vulputate condimentum nec eu tellus. Phasellus massa velit, venenatis ut dignissim at, pulvinar eu eros. Morbi scelerisque enim tincidunt tincidunt dignissim. Suspendisse elementum libero eu auctor ornare. Donec convallis neque sed turpis pharetra semper.</p>
+                    <figure>
+                        <img src="soccer-2.jpg" alt=" ">
+                        <figcaption>Duis ac pulvinar risus. Etiam porttitor a lorem a pulvinar. Cras et nisl erat.</figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar fringilla euismod. Aliquam erat volutpat. Aliquam lobortis erat nec risus vehicula fermentum. Vivamus scelerisque lobortis quam. Duis ac pulvinar risus. Etiam porttitor a lorem a pulvinar. Cras et nisl erat. Sed eu nunc eget est scelerisque dignissim. Proin eget pellentesque dolor. Praesent vel tincidunt risus. Curabitur tincidunt ipsum nunc, eu molestie ipsum consectetur at. Donec non risus a lacus mollis viverra at vitae quam. Aenean sit amet dui nunc. Nulla sed risus odio. Nulla justo velit, feugiat ac tellus vel, malesuada tempus eros. Sed at rhoncus purus.</p>
+                    <p>Cras ullamcorper turpis eget ipsum sodales, sit amet lacinia libero vulputate. Donec quis dolor pretium, fermentum dui a, imperdiet ligula. Curabitur vehicula lacinia malesuada. Nunc magna ligula, imperdiet vitae sagittis et, euismod id ante. Sed finibus mi non massa ultrices, a euismod elit euismod. Proin ut eleifend metus, auctor eleifend purus. Aliquam ullamcorper, neque at ullamcorper commodo, augue metus placerat risus, ut porttitor neque massa et risus. Maecenas ultrices purus ut neque mollis efficitur. Quisque sollicitudin ultricies laoreet. Donec lobortis posuere elit et accumsan. Etiam quis tellus nec ipsum vulputate condimentum nec eu tellus. Phasellus massa velit, venenatis ut dignissim at, pulvinar eu eros. Morbi scelerisque enim tincidunt tincidunt dignissim. Suspendisse elementum libero eu auctor ornare. Donec convallis neque sed turpis pharetra semper.</p>
+                    <figure>
+                        <img src="soccer-3.jpg" alt=" ">
+                        <figcaption>Duis ac pulvinar risus. Etiam porttitor a lorem a pulvinar. Cras et nisl erat.</figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar fringilla euismod. Aliquam erat volutpat. Aliquam lobortis erat nec risus vehicula fermentum. Vivamus scelerisque lobortis quam. Duis ac pulvinar risus. Etiam porttitor a lorem a pulvinar. Cras et nisl erat. Sed eu nunc eget est scelerisque dignissim. Proin eget pellentesque dolor. Praesent vel tincidunt risus. Curabitur tincidunt ipsum nunc, eu molestie ipsum consectetur at. Donec non risus a lacus mollis viverra at vitae quam. Aenean sit amet dui nunc. Nulla sed risus odio. Nulla justo velit, feugiat ac tellus vel, malesuada tempus eros. Sed at rhoncus purus.</p>
+                    <p>Cras ullamcorper turpis eget ipsum sodales, sit amet lacinia libero vulputate. Donec quis dolor pretium, fermentum dui a, imperdiet ligula. Curabitur vehicula lacinia malesuada. Nunc magna ligula, imperdiet vitae sagittis et, euismod id ante. Sed finibus mi non massa ultrices, a euismod elit euismod. Proin ut eleifend metus, auctor eleifend purus. Aliquam ullamcorper, neque at ullamcorper commodo, augue metus placerat risus, ut porttitor neque massa et risus. Maecenas ultrices purus ut neque mollis efficitur. Quisque sollicitudin ultricies laoreet. Donec lobortis posuere elit et accumsan. Etiam quis tellus nec ipsum vulputate condimentum nec eu tellus. Phasellus massa velit, venenatis ut dignissim at, pulvinar eu eros. Morbi scelerisque enim tincidunt tincidunt dignissim. Suspendisse elementum libero eu auctor ornare. Donec convallis neque sed turpis pharetra semper.</p>
+                    <figure>
+                        <img src="soccer-4.jpg" alt=" ">
+                        <figcaption>Duis ac pulvinar risus. Etiam porttitor a lorem a pulvinar. Cras et nisl erat.</figcaption>
+                    </figure>
+                </div>
+            </article>
+            <aside>
+                <section class="secondarystory">
+                    <a href="#">
+                        <figure>
+                            <img src="coffee-1.jpg" alt=" ">
+                        </figure>
+                        <h2>Story about coffee</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </a>
+                </section>
+                <section class="secondarystory">
+                    <a href="#">
+                        <figure>
+                            <img src="trees-1.jpg" alt=" ">
+                        </figure>
+                        <h2>Story about trees</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </a>
+                </section>
+                <section class="secondarystory">
+                    <a href="#">
+                        <figure>
+                            <img src="guitars-1.jpg" alt=" ">
+                        </figure>
+                        <h2>Story about guitars</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </a>
+                </section>
+                <section class="secondarystory">
+                    <a href="#">
+                        <figure>
+                            <img src="cars-1.jpg" alt=" ">
+                        </figure>
+                        <h2>Story about cars</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </a>
+                </section>
+            </aside>
+            <footer>
+                <p>All rights reserved.</p>
+            </footer>
+    </body>
+</html>
