@@ -21,7 +21,7 @@ body {
 }
 
 h1 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Fredoka One', sans-serif;
     width: 7rem;
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -55,17 +55,21 @@ nav li {
 }
 
 nav a {
-    color: #003366;
+    color: #003366; /* Navy blue */
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fredoka One', sans-serif;
 }
 
 h2 {
     padding-left: 0.33em;
     font-size: 3em;
     font-weight: bold;
-    font-family: 'Oswald', sans-serif;
-    color: #003366;
+    font-family: 'Fredoka One', sans-serif;
+    color: #003366; /* Navy blue */
+}
+
+h2.green-title {
+    color: #69BE28; /* Green */
 }
 
 section.secondary-story h2 {
@@ -76,7 +80,7 @@ section.secondary-story h2 {
 section.tertiary-story h2 {
     padding-left: 1em;
     font-size: 1em;
-    border-top: 1px solid #003366;
+    border-top: 1px solid #003366; /* Navy blue */
 }
 
 figcaption {
@@ -85,6 +89,7 @@ figcaption {
     padding-bottom: 1em;
     font-style: italic;
     color: #707070;
+    font-family: 'Poppins', sans-serif;
 }
 
 article h2 {
@@ -92,14 +97,14 @@ article h2 {
     padding-bottom: 0.25em;
     font-size: 3em;
     font-weight: bold;
-    font-family: 'Oswald', sans-serif;
-    color: #003366;
+    font-family: 'Fredoka One', sans-serif;
+    color: #003366; /* Navy blue */
 }
 
 aside h2 {
     padding: 0;
     font-size: 1em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fredoka One', sans-serif;
 }
 
 aside {
@@ -110,17 +115,19 @@ aside {
 p {
     text-decoration: none;
     padding: 0 1em 1em;
+    font-family: 'Poppins', sans-serif;
 }
 
 aside p {
     padding-left: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 footer {
     padding-top: 1em;
     padding-bottom: 1em;
     color: #f4f4f4;
-    background-color: #003366;
+    background-color: #003366; /* Navy blue */
 }
 
 @media only screen and (min-width: 40em) {
