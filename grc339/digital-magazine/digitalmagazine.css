@@ -1,5 +1,3 @@
-/* CSS document */
-
 /* Reset styles */
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
@@ -83,55 +81,49 @@ section.tertiary-story h2 {
     border-top: 1px solid #003366; /* Navy blue */
 }
 
+/* General figure styles */
 figure {
     position: relative;
     margin: 0;
     padding: 0;
 }
 
-figcaption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+/* Ensure the image covers the entire figure */
+figure img {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: white;
-    text-align: center;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+/* Style for figcaption */
+figcaption {
     padding: 5px;
     font-size: 14px; /* Adjust as needed */
     font-family: 'Poppins', sans-serif; /* Using 'Poppins' as per your design preference */
+    color: #333; /* Adjust to match design */
+    text-align: center;
+    background-color: #f4f4f4; /* Light background for better readability */
+    margin-top: 0.5em; /* Space between image and caption */
     box-sizing: border-box;
 }
 
-article h2 {
-    padding-top: 0.5em;
-    padding-bottom: 0.25em;
-    font-size: 3em;
-    font-weight: bold;
-    font-family: 'Fredoka One', sans-serif;
-    color: #003366; /* Navy blue */
+/* Ensure figures are correctly positioned in articles */
+article {
+    margin: 20px 0;
 }
 
-aside h2 {
-    padding: 0;
-    font-size: 1em;
-    font-family: 'Fredoka One', sans-serif;
+article figure {
+    margin: 10px 0;
 }
 
 aside {
+    margin: 20px 0;
     background-color: #d3d3d3;
     padding: 1em;
 }
 
-p {
-    text-decoration: none;
-    padding: 0 1em 1em;
-    font-family: 'Poppins', sans-serif;
-}
-
-aside p {
-    padding-left: 0;
-    font-family: 'Poppins', sans-serif;
+aside figure {
+    margin: 10px 0;
 }
 
 footer {
@@ -152,7 +144,6 @@ footer {
 }
 
 @media only screen and (min-width: 60em) {
-
     div.home-container {
         max-width: 80em;
         padding: 0 1em;
