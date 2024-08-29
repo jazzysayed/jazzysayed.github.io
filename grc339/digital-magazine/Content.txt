@@ -1,72 +1,45 @@
 Cool Logo
 
 Sections for the nav:
-Style
-Music
-Wellbeing
-Sports
-Opinion 
+Home
+News & Analysis
+Player Spotlights
+Fan Zone
+Team & Stats 
 
 
 
-Story about soccer
+Injury Report: Key Players on the Mend
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+An update on injured players and their expected return dates.
 
+Behind the Scenes: A Day in the Life of a Seahawks Coach
 
-Story about dance
+A look into the daily routine and challenges faced by a Seahawks coach.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Seahawks' Draft Strategy: Looking Ahead to 2025
 
+Speculation and analysis of the Seahawks' potential draft picks for next year.
 
-Story about coffee
+Special Teams Spotlight: Unsung Heroes of the Seahawks
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+A focus on the special teams unit and their contributions to the season.
 
+Seahawks Trivia: How Well Do You Know Your Team?
 
-Story about trees
+A fun trivia section to test readers' knowledge of Seahawks history.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Contract Talks: Which Players are Set for Renewal?
 
-
-Story about guitars
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-
-Story about cars
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+An update on upcoming contract renewals and what it means for the team's future.
 
 
-Story about surfing
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 
-Story about hiking
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 
-Story about flowers
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 
-Story about candles
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-
-Story about astronomy
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-
-Story about astrology
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 
 Footer:
@@ -77,24 +50,29 @@ All rights reserved.
 
 [Image of soccer 1]
 
-Story about soccer
+Rookie Standouts: The Future of the Seahawks 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Phasellus egestas tellus rutrum tellus pellentesque. Orci nulla pellentesque dignissim enim sit amet. Vestibulum lorem sed risus ultricies tristique nulla. Mauris augue neque gravida in. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Et odio pellentesque diam volutpat. Amet nisl purus in mollis. Mattis nunc sed blandit libero. Quis vel eros donec ac odio tempor orci dapibus. Velit egestas dui id ornare arcu odio ut sem.
+This article shines a spotlight on the rookies who have emerged as key contributors to the Seahawks this season. Through detailed player profiles, the piece explores their journey from college football to the NFL, highlighting the challenges they've overcome and their standout performances on the field. Coaches and veteran players weigh in on the potential these rookies have to become the future stars of the team, offering insights into how they're adapting to the professional level and what fans can expect from them in the coming years.
 
-Arcu dui vivamus arcu felis. Enim ut sem viverra aliquet eget. Nullam vehicula ipsum a arcu. Auctor neque vitae tempus quam. Id diam maecenas ultricies mi eget mauris pharetra et. Arcu non sodales neque sodales ut etiam sit amet nisl. Consequat ac felis donec et odio. Lorem sed risus ultricies tristique nulla aliquet enim tortor. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Tincidunt arcu non sodales neque. Urna duis convallis convallis tellus id interdum. Tortor vitae purus faucibus ornare. Tellus in metus vulputate eu scelerisque. Mattis molestie a iaculis at. Leo vel fringilla est ullamcorper eget nulla. Gravida quis blandit turpis cursus in hac.
+
 
 [Image of soccer 2]
 
-Quis ipsum suspendisse ultrices gravida dictum fusce ut. Sed id semper risus in hendrerit gravida rutrum quisque non. Odio euismod lacinia at quis risus sed vulputate. Cursus eget nunc scelerisque viverra mauris in aliquam sem. Sed arcu non odio euismod lacinia. Consectetur libero id faucibus nisl. Ultricies mi quis hendrerit dolor magna eget est lorem. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. Nisi scelerisque eu ultrices vitae auctor eu augue ut. Senectus et netus et malesuada fames. Nulla porttitor massa id neque. Ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Tempus urna et pharetra pharetra massa massa ultricies mi quis. Neque vitae tempus quam pellentesque nec nam aliquam sem. Sed viverra tellus in hac habitasse platea. Dictum varius duis at consectetur lorem. Pharetra diam sit amet nisl. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+Geno Smith's Leadership: Steering the Seahawks Through a Challenging Season 
 
-Felis bibendum ut tristique et egestas quis ipsum suspendisse. Mattis rhoncus urna neque viverra. Orci eu lobortis elementum nibh tellus molestie nunc non blandit. Turpis egestas sed tempus urna et pharetra pharetra massa massa. Ac auctor augue mauris augue neque gravida. Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat. Viverra vitae congue eu consequat. Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc. Imperdiet nulla malesuada pellentesque elit eget. A arcu cursus vitae congue. Tortor at risus viverra adipiscing.
+Geno Smith has stepped up as the Seahawks' leader, guiding the team through a season filled with ups and downs. This feature delves into his evolution as a quarterback, examining how he's shouldered the responsibilities of leadership both on and off the field. Interviews with teammates and coaches reveal how Geno's calm demeanor, strategic thinking, and ability to perform under pressure have been crucial in keeping the team focused and competitive. The article also looks at how Geno is mentoring younger players and what his leadership means for the future of the Seahawks.
+
 
 [Image of soccer 3]
 
-Eu nisl nunc mi ipsum. Facilisis mauris sit amet massa vitae tortor. Aliquam sem fringilla ut morbi tincidunt augue. Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat. Ut pharetra sit amet aliquam id diam maecenas ultricies. Luctus accumsan tortor posuere ac ut consequat semper viverra. Duis at consectetur lorem donec massa sapien. Nunc sed id semper risus in hendrerit gravida rutrum quisque. Maecenas ultricies mi eget mauris pharetra et. Purus faucibus ornare suspendisse sed nisi lacus sed. Consequat nisl vel pretium lectus quam. Faucibus pulvinar elementum integer enim neque volutpat. Morbi tempus iaculis urna id volutpat. Lobortis feugiat vivamus at augue eget arcu dictum. Nulla facilisi cras fermentum odio eu feugiat. Massa vitae tortor condimentum lacinia quis vel eros donec ac.
+Seahawks vs. 49ers: A Rivalry Renewed 
+
+The rivalry between the Seahawks and the 49ers is one of the NFL's most storied and intense matchups. This article provides a comprehensive preview of their upcoming clash, revisiting the history of this fierce rivalry and what it means for both teams. Key matchups and strategic battles are analyzed, with a focus on how past games have shaped the current season. Fans and analysts offer their perspectives on what makes this rivalry so special, and the piece concludes with predictions on how this game could impact the playoff race.
 
 [Image of soccer 4]
 
-Captions of all images for now: 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Seahawks' Community Outreach: Giving Back to Seattle 
+
+Beyond the gridiron, the Seahawks are deeply committed to making a positive impact in the Seattle community. This article highlights the team's recent community outreach efforts, showcasing events and initiatives that support local charities, youth programs, and social justice causes. Readers will learn about the personal involvement of players and coaches in these efforts, from visiting schools to participating in fundraising events. The piece also explores how these initiatives are helping to strengthen the bond between the team and its fans, illustrating the Seahawks' role as not just a sports team, but a vital part of the community.
+
 
