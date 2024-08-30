@@ -153,6 +153,59 @@ footer {
     background-color: #003366; /* Navy blue */
 }
 
+/* Newsletter Subscription Form */
+.newsletter {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #003366; /* Navy blue */
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter label {
+    margin-top: 10px;
+}
+
+.newsletter input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.newsletter input[type="checkbox"],
+.newsletter input[type="radio"] {
+    margin-right: 10px;
+}
+
+.newsletter button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #003366; /* Navy blue */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Fredoka One', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #69BE28; /* Green */
+}
+
+/* Media Queries */
 @media only screen and (min-width: 40em) {
     nav ul li {
         display: inline;
@@ -237,25 +290,4 @@ footer {
     section.secondary-story a p {
         flex: 0 0 4em;
     }
-   
-    /* CSS for Subscribe Button */
-.subscribe-button {
-    display: block;
-    width: fit-content;
-    margin: 1rem auto; /* Center the button horizontally */
-    padding: 0.5rem 1rem;
-    background-color: #003366; /* Navy blue */
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Fredoka One', sans-serif;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.subscribe-button:hover {
-    background-color: #69BE28; /* Green */
-}
-
 }
