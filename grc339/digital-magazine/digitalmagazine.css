@@ -8,30 +8,35 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
     font-size: 100%;
     font: inherit;
 }
-img {
-    width: 100%;
-    display: block;
-}
+
+/* Base Styles */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
+
+img {
+    width: 100%;
+    display: block;
+}
+
 h1 {
     font-family: 'Fredoka One', sans-serif;
     width: 7rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    padding-left: 1em;
+    padding: 1rem 0 1rem 1em;
 }
+
 a {
     color: #333;
     text-decoration: none;
 }
+
 div.container, div.home-container {
     margin: auto;
     max-width: 40em;
 }
+
 ul {
     list-style-type: none;
     font-weight: bold;
@@ -39,17 +44,21 @@ ul {
     padding-left: 1em;
     line-height: 1.5em;
 }
+
 nav ul {
     text-align: left;
 }
+
 nav li {
     margin-right: 1.25em;
 }
+
 nav a {
     color: #003366; /* Navy blue */
     text-decoration: none;
     font-family: 'Fredoka One', sans-serif;
 }
+
 h2 {
     padding-left: 0.33em;
     font-size: 3em;
@@ -57,13 +66,16 @@ h2 {
     font-family: 'Fredoka One', sans-serif;
     color: #003366; /* Navy blue */
 }
+
 h2.green-title {
     color: #69BE28; /* Green */
 }
+
 section.secondary-story h2 {
     padding-left: 0.5em;
     font-size: 2em;
 }
+
 section.tertiary-story h2 {
     padding-left: 1em;
     font-size: 1em;
@@ -72,26 +84,30 @@ section.tertiary-story h2 {
 
 /* Figure and figcaption styling */
 figure {
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0;
     display: block;
-    max-width: 100%; /* Ensure the figure doesn’t overflow its container */
+    max-width: 100%;
 }
 
 figure img {
-    width: 100%; /* Make the image responsive */
+    width: 100%;
     height: auto;
-    display: block; /* Remove any gap below the image */
+    display: block;
 }
 
+/* Hide figcaption by default */
 figcaption {
-    font-family: 'Poppins', sans-serif; /* Use your preferred font */
-    font-size: 0.9rem; /* Adjust the caption font size */
-    color: #D3D3D3; /* Adjust the caption color to your theme */
-    text-align: center; /* Center the caption text */
-    padding: 0.5rem 0; /* Add some padding above and below the caption */
-    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a background to the caption */
-    border-radius: 5px; /* Optional: Add rounded corners */
+    display: none;
+}
+
+/* Show figcaption if image fails to load */
+figure img:not([src]) {
+    display: none; /* Hide the image if the src is empty or missing */
+}
+
+figure img:not([src]) + figcaption {
+    display: block; /* Show figcaption only if the image src is missing */
 }
 
 article h2 {
@@ -102,30 +118,37 @@ article h2 {
     font-family: 'Fredoka One', sans-serif;
     color: #003366; /* Navy blue */
 }
+
 aside h2 {
     padding: 0;
     font-size: 1em;
     font-family: 'Fredoka One', sans-serif;
 }
+
 aside {
     background-color: #d3d3d3;
     padding: 1em;
 }
+
 p {
     text-decoration: none;
     padding: 0 1em 1em;
     font-family: 'Poppins', sans-serif;
 }
+
 aside p {
     padding-left: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 footer {
     padding-top: 1em;
     padding-bottom: 1em;
     color: #f4f4f4;
     background-color: #003366; /* Navy blue */
 }
+
+/* Media Queries */
 @media only screen and (min-width: 40em) {
     nav ul li {
         display: inline;
@@ -134,6 +157,7 @@ footer {
         padding-left: 0em;
     }
 }
+
 @media only screen and (min-width: 60em) {
     div.home-container {
         max-width: 80em;
