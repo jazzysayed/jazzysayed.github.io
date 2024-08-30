@@ -373,3 +373,29 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #E0D0C1;
 }
+
+/* Add this to your digitalmagazine.css */
+
+.subscribe-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #AA968A; /* Adjust the color as needed */
+    color: #FFFFFF; /* Text color */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.3em;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.subscribe-button:hover {
+    background-color: #E0D0C1; /* Lighter color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.subscribe-button:focus {
+    outline: 2px solid #AA968A; /* Outline on focus */
+}
+
