@@ -9,22 +9,23 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
     font: inherit;
 }
 
-/* Base Styles */
+img {
+    width: 100%;
+    display: block;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
-img {
-    width: 100%;
-    display: block;
-}
-
 h1 {
     font-family: 'Fredoka One', sans-serif;
     width: 7rem;
-    padding: 1rem 0 1rem 1em;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 1em;
 }
 
 a {
@@ -84,30 +85,34 @@ section.tertiary-story h2 {
 
 /* Figure and figcaption styling */
 figure {
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
     display: block;
-    max-width: 100%;
+    max-width: 100%; /* Ensure the figure doesn’t overflow its container */
 }
 
 figure img {
-    width: 100%;
+    width: 100%; /* Make the image responsive */
     height: auto;
-    display: block;
+    display: block; /* Remove any gap below the image */
 }
 
-/* Hide figcaption by default */
 figcaption {
-    display: none;
+    font-family: 'Poppins', sans-serif; /* Use your preferred font */
+    font-size: 0.9rem; /* Adjust the caption font size */
+    color: #D3D3D3; /* Adjust the caption color to your theme */
+    text-align: center; /* Center the caption text */
+    padding: 0.5rem 0; /* Add some padding above and below the caption */
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a background to the caption */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    display: none; /* Hide figcaption by default */
 }
 
-/* Show figcaption if image fails to load */
-figure img:not([src]) {
-    display: none; /* Hide the image if the src is empty or missing */
-}
-
-figure img:not([src]) + figcaption {
-    display: block; /* Show figcaption only if the image src is missing */
+/* Ensure figcaption only shows if the image fails to load */
+figure img:invalid {
+    + figcaption {
+        display: block; /* Show figcaption if the image fails to load */
+    }
 }
 
 article h2 {
@@ -148,7 +153,6 @@ footer {
     background-color: #003366; /* Navy blue */
 }
 
-/* Media Queries */
 @media only screen and (min-width: 40em) {
     nav ul li {
         display: inline;
