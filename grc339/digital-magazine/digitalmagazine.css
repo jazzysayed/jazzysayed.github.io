@@ -109,63 +109,25 @@ figcaption {
 }
 
 /* Ensure figcaption only shows if the image fails to load */
-figure img:invalid {
-    + figcaption {
-        display: block; /* Show figcaption if the image fails to load */
-    }
-}
-
-article h2 {
-    padding-top: 0.5em;
-    padding-bottom: 0.25em;
-    font-size: 3em;
-    font-weight: bold;
-    font-family: 'Fredoka One', sans-serif;
-    color: #003366; /* Navy blue */
-}
-
-aside h2 {
-    padding: 0;
-    font-size: 1em;
-    font-family: 'Fredoka One', sans-serif;
-}
-
-aside {
-    background-color: #d3d3d3;
-    padding: 1em;
-}
-
-p {
-    text-decoration: none;
-    padding: 0 1em 1em;
-    font-family: 'Poppins', sans-serif;
-}
-
-aside p {
-    padding-left: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-footer {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    color: #f4f4f4;
-    background-color: #003366; /* Navy blue */
+figure img:invalid + figcaption {
+    display: block; /* Show figcaption if the image fails to load */
 }
 
 /* Newsletter Subscription Form */
 .newsletter {
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 500px; /* Set a max width for the form */
 }
 
 .newsletter h2 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #003366; /* Navy blue */
+    font-family: 'Fredoka One', sans-serif;
 }
 
 .newsletter form {
@@ -175,13 +137,15 @@ footer {
 
 .newsletter label {
     margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .newsletter input[type="text"] {
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px; /* Add some space below input fields */
 }
 
 .newsletter input[type="checkbox"],
@@ -190,7 +154,7 @@ footer {
 }
 
 .newsletter button {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px;
     background-color: #003366; /* Navy blue */
     color: #fff;
@@ -199,10 +163,33 @@ footer {
     cursor: pointer;
     font-family: 'Fredoka One', sans-serif;
     transition: background-color 0.3s ease;
+    font-size: 16px; /* Adjust font size */
 }
 
 .newsletter button:hover {
     background-color: #69BE28; /* Green */
+}
+
+/* Photo Gallery Styling */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    justify-items: center;
+    padding: 1em;
+}
+
+.photo-gallery figure {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Optional: Set a maximum height */
+    object-fit: cover; /* Ensure images cover the area */
 }
 
 /* Media Queries */
