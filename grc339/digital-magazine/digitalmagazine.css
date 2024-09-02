@@ -352,4 +352,48 @@ input[type="submit"]:hover {
     div.home-container {
         max-width: 100%;
     }
+/* Photo Gallery Styles */
+main.photo-gallery {
+    padding: 2em;
+    background-color: #f8f8f8; /* Light Grey Background for the Gallery */
+}
+
+h2.photo-gallery {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3em;
+    margin-bottom: 1em;
+    color: #002244; /* Navy Blue */
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.gallery-container figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+figcaption {
+    font-size: 1em;
+    color: #616161;
+    text-align: center;
+    margin-top: 0.5em;
+    font-style: italic;
+}
+    
 }
