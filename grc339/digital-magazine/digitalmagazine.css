@@ -1,4 +1,5 @@
-/* Reset styles */
+/* CSS document */
+
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -10,10 +11,29 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 img {
     width: 100%;
     display: block;
-    height: auto; /* Ensure images maintain aspect ratio */
 }
 
-/* Basic styling */
+figure {
+    margin: 0em;
+    padding: 0em;
+}
+
+div.container, div.home-container {
+    max-width: 40em;
+    margin: auto;
+}
+
+div.photo-gallery {
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 0em 1em;
+}
+
+div.newsletter {
+    max-width: 60em;
+    margin: auto;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.4em;
@@ -43,14 +63,41 @@ h2 {
     line-height: 1em;
 }
 
-/* Navigation styles */
-nav {
-    display: flex;
+section.secondary h2 {
+    font-size: 1.5em;
+    color: #002244; /* Navy Blue */
+    margin: 0.4em 0.2em 0.3em;
 }
 
-nav ul {
+section.tertiary {
+    margin: 2em 0.5em 0em;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #002244; /* Navy Blue */
+}
+
+section.tertiary h2 {
+    font-size: 1.3em;
+    margin: 0.5em 0.1em 0em;
+}
+
+section.tertiary p {
+    margin: 0em 0.1em 1em;
+}
+
+p {
+    margin: 0em 0em 2em 0.5em;
+    line-height: 1.2em;
+    color: #000000;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
     display: flex;
-    list-style: none;
 }
 
 nav ul li {
@@ -62,7 +109,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Subscribe button styles */
 .subscribe-button {
     padding: 0.5em 1em;
     background-color: #002244; /* Navy Blue */
@@ -78,9 +124,57 @@ nav ul li a {
     background-color: #003366; /* Darker Navy Blue */
 }
 
-/* Photo Gallery Styles */
+figcaption {
+    font-style: italic;
+    color: #616161;
+    margin: 0.4em 0.5em 1.2em;
+    line-height: 1.2em;
+}
+
+article.main-story h2 {
+    margin: 1.2em 0.2em 0.7em;
+}
+
+article.main-story p {
+    line-height: 1.3em;
+    margin-bottom: 1em;
+}
+
+aside {
+    padding-bottom: 1em;
+}
+
+aside.main-story {
+    background-color: #D3D3D3; /* Light Grey */
+}
+
+aside.main-story h2 {
+    color: #002244; /* Navy Blue */
+}
+
+aside figure {
+    padding: 1em 0.5em 0em;
+}
+
+aside h2 {
+    font-size: 1.2em;
+    padding: 0em 0.2em;
+}
+
+footer {
+    padding: 0.5em 0em 0.5em;
+    background-color: #002244; /* Navy Blue */
+}
+
+footer p {
+    color: #FFFFFF;
+    margin: 0.5em 0.5em;
+}
+
 main.photo-gallery {
-    padding: 2em;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(60% + 8em);
     background-color: #f8f8f8; /* Light Grey Background for the Gallery */
 }
 
@@ -91,6 +185,7 @@ h2.photo-gallery {
     color: #002244; /* Navy Blue */
 }
 
+/* Gallery Container */
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -122,17 +217,6 @@ figcaption {
     font-style: italic;
 }
 
-/* Footer */
-footer {
-    padding: 0.5em 0em 0.5em;
-    background-color: #002244; /* Navy Blue */
-}
-
-footer p {
-    color: #FFFFFF;
-    margin: 0.5em 0.5em;
-}
-
 /* Responsive Design */
 @media screen and (min-width: 40em) {
     header {
@@ -159,6 +243,39 @@ footer p {
     figcaption {
         margin: 0.4em 0em 1.2em;
     }
+
+    article.main-story h2 {
+        margin: 1.2em 0em 0.7em;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 1em;
+    }
+
+    aside h2 {
+        padding: 0em 0.5em;
+        color: #002244; /* Navy Blue */
+    }
+
+    aside p {
+        padding: 0em 0.5em;
+    }
+
+    nav.photo-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5em;
+    }
+
+    nav.photo-gallery img {
+        width: 6em;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+        border-radius: 0.5em;
+        flex-shrink: 0;
+    }
 }
 
 @media screen and (min-width: 60em) {
@@ -168,5 +285,61 @@ footer p {
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-gap: 1em;
+    }
+
+    div.container {
+        max-width: 60em;
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+    }
+
+    div.newsletter {
+        max-width: 60em;
+        margin: auto;
+    }
+
+    header, footer {
+        grid-column: 1/3;
+    }
+
+    div.home-container main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+    }
+
+    div.home-container aside {
+        background: none;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    div.container aside {
+        margin-top: 0;
+    }
+
+    section.main-story {
+        grid-column: 2/4;
+        grid-row: 1/3;
+        display: flex;
+    }
+
+    section.main-story a {
+        flex: 1 0 12em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.main-story a img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 80em) {
+    div.home-container {
+        max-width: 100%;
     }
 }
