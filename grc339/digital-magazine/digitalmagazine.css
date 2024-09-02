@@ -175,59 +175,49 @@ main.photo-gallery {
     position: relative;
     overflow: hidden;
     padding-bottom: calc(60% + 8em);
+    background-color: #f8f8f8; /* Light Grey Background for the Gallery */
 }
 
 h2.photo-gallery {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.3em;
-    padding-top: 1em;
     margin-bottom: 1em;
     color: #002244; /* Navy Blue */
 }
 
-main.photo-gallery figure {
-    margin: 0;
-    width: calc(100%-2em);
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.5s;
+/* Gallery Container */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
 }
 
-main.photo-gallery img {
+.gallery-container figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-container img {
     width: 100%;
     height: auto;
-}
-
-main.photo-gallery figcaption {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 0.5em 0;
-    color: #002244; /* Navy Blue */
-}
-
-main.photo-gallery p {
-    font-size: 1em;
-    font-style: italic;
-    margin: 1em 0;
-    color: #616161;
-}
-
-input[type="submit"] {
-    padding: 0.8em 1.5em;
-    margin: 2em 0em 3em;
-    background-color: #002244; /* Navy Blue */
-    color: #FFFFFF;
-    border: none;
     border-radius: 0.5em;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.2s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
-input[type="submit"]:hover {
-    background-color: #003366; /* Darker Navy Blue */
+.gallery-container img:hover {
+    transform: scale(1.05);
 }
 
+figcaption {
+    font-size: 1em;
+    color: #616161;
+    text-align: center;
+    margin-top: 0.5em;
+    font-style: italic;
+}
+
+/* Responsive Design */
 @media screen and (min-width: 40em) {
     header {
         margin: 0em;
@@ -352,48 +342,4 @@ input[type="submit"]:hover {
     div.home-container {
         max-width: 100%;
     }
-/* Photo Gallery Styles */
-main.photo-gallery {
-    padding: 2em;
-    background-color: #f8f8f8; /* Light Grey Background for the Gallery */
-}
-
-h2.photo-gallery {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.3em;
-    margin-bottom: 1em;
-    color: #002244; /* Navy Blue */
-}
-
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1em;
-}
-
-.gallery-container figure {
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.gallery-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 0.5em;
-    transition: transform 0.3s ease-in-out;
-}
-
-.gallery-container img:hover {
-    transform: scale(1.05);
-}
-
-figcaption {
-    font-size: 1em;
-    color: #616161;
-    text-align: center;
-    margin-top: 0.5em;
-    font-style: italic;
-}
-    
 }
