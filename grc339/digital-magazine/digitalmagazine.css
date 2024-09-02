@@ -171,6 +171,7 @@ footer p {
     margin: 0.5em 0.5em;
 }
 
+/* Photo Gallery Styles */
 main.photo-gallery {
     position: relative;
     overflow: hidden;
@@ -212,6 +213,38 @@ main.photo-gallery p {
     color: #616161;
 }
 
+input[type="radio"] {
+    display: none;
+}
+
+input#photo1:checked ~ main.photo-gallery figure:nth-of-type(1),
+input#photo2:checked ~ main.photo-gallery figure:nth-of-type(2),
+input#photo3:checked ~ main.photo-gallery figure:nth-of-type(3),
+input#photo4:checked ~ main.photo-gallery figure:nth-of-type(4),
+input#photo5:checked ~ main.photo-gallery figure:nth-of-type(5),
+input#photo6:checked ~ main.photo-gallery figure:nth-of-type(6),
+input#photo7:checked ~ main.photo-gallery figure:nth-of-type(7),
+input#photo8:checked ~ main.photo-gallery figure:nth-of-type(8) {
+    display: block;
+}
+
+nav.photo-gallery {
+    text-align: center;
+    margin-top: 1em;
+}
+
+nav.photo-gallery label {
+    display: inline-block;
+    width: 100px; /* Adjust size as needed */
+    margin: 0.5em;
+    cursor: pointer;
+}
+
+nav.photo-gallery img {
+    width: 100%;
+    border: 2px solid #003366; /* Adjust border color as needed */
+}
+
 input[type="submit"] {
     padding: 0.8em 1.5em;
     margin: 2em 0em 3em;
@@ -228,6 +261,7 @@ input[type="submit"]:hover {
     background-color: #003366; /* Darker Navy Blue */
 }
 
+/* Media Queries */
 @media screen and (min-width: 40em) {
     header {
         margin: 0em;
@@ -352,5 +386,4 @@ input[type="submit"]:hover {
     div.home-container {
         max-width: 100%;
     }
-
 }
