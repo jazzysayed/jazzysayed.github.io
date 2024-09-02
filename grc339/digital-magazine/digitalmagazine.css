@@ -18,6 +18,17 @@ figure {
     padding: 0em;
 }
 
+/* Hide figcaptions visually but keep them accessible */
+figcaption {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
 
 div.container, div.home-container {
     max-width: 40em;
@@ -99,6 +110,15 @@ a {
 
 nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically center */
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 nav ul li {
