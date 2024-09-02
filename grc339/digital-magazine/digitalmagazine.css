@@ -352,4 +352,22 @@ input[type="submit"]:hover {
     div.home-container {
         max-width: 100%;
     }
+
+    section.tertiary {
+    margin: 2em 0.5em 0em;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #918F78;
+}
+
+section.tertiary article {
+    border-bottom: 1px solid #D3D3D3; /* Light gray line to separate each story */
+    padding-bottom: 1em; /* Space between content and the line */
+    margin-bottom: 1em; /* Space between stories */
+}
+
+section.tertiary article:last-child {
+    border-bottom: none; /* Remove the bottom border for the last story */
+}
+
 }
