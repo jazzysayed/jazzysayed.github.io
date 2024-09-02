@@ -43,31 +43,104 @@ div.photo-gallery {
 
 div.newsletter {
     max-width: 60em;
-    margin: 2em auto; /* Center horizontally and add margin */
+    margin: auto;
+    background-color: #F0F0F0; /* Light Grey Background */
     padding: 2em;
-    background-color: #f8f8f8; /* Light Grey Background for contrast */
     border-radius: 0.5em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    align-items: center; /* Center content inside the box */
-}
-
-div.newsletter h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: #002244; /* Navy Blue */
-}
-
-div.newsletter p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    margin-bottom: 1em;
 }
 
 .newsletter-content {
-    text-align: center; /* Center text inside this container */
+    text-align: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4em;
+    color: #222;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0.2em;
+    padding: 0.2em;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    width: 12em;
+    margin: 1em 0em;
+    color: #002244; /* Navy Blue */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0.4em 0.2em 0.3em;
+    color: #002244; /* Navy Blue */
+    line-height: 1em;
+}
+
+section.secondary h2 {
+    font-size: 1.5em;
+    color: #002244; /* Navy Blue */
+    margin: 0.4em 0.2em 0.3em;
+}
+
+section.tertiary {
+    margin: 2em 0.5em 0em;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #002244; /* Navy Blue */
+}
+
+section.tertiary h2 {
+    font-size: 1.3em;
+    margin: 0.5em 0.1em 0em;
+}
+
+section.tertiary p {
+    margin: 0em 0.1em 1em;
+}
+
+p {
+    margin: 0em 0em 2em 0.5em;
+    line-height: 1.2em;
+    color: #000000;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically center */
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: #37FF4B; /* Bright Green */
+    font-weight: bold;
+    font-size: 1.2em; /* Adjusted font size */
 }
 
 .subscribe-button {
@@ -79,15 +152,105 @@ div.newsletter p {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.2s ease;
-    margin-left: auto; /* Pushes the button to the right */
-    align-self: flex-end; /* Aligns the button to the end of the flex container */
+    float: right; /* Align to the right */
 }
 
 .subscribe-button:hover {
     background-color: #003366; /* Darker Navy Blue */
 }
 
-/* Other styles remain the same */
+figcaption {
+    font-style: italic;
+    color: #616161;
+    margin: 0.4em 0.5em 1.2em;
+    line-height: 1.2em;
+}
+
+article.main-story h2 {
+    margin: 1.2em 0.2em 0.7em;
+}
+
+article.main-story p {
+    line-height: 1.3em;
+    margin-bottom: 1em;
+}
+
+aside {
+    padding-bottom: 1em;
+}
+
+aside.main-story {
+    background-color: #D3D3D3; /* Light Grey */
+}
+
+aside.main-story h2 {
+    color: #002244; /* Navy Blue */
+}
+
+aside figure {
+    padding: 1em 0.5em 0em;
+}
+
+aside h2 {
+    font-size: 1.2em;
+    padding: 0em 0.2em;
+}
+
+footer {
+    padding: 0.5em 0em 0.5em;
+    background-color: #002244; /* Navy Blue */
+}
+
+footer p {
+    color: #FFFFFF;
+    margin: 0.5em 0.5em;
+}
+
+main.photo-gallery {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(60% + 8em);
+    background-color: #f8f8f8; /* Light Grey Background for the Gallery */
+}
+
+h2.photo-gallery {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3em;
+    margin-bottom: 1em;
+    color: #002244; /* Navy Blue */
+}
+
+/* Gallery Container */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.gallery-container figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+figcaption {
+    font-size: 1em;
+    color: #616161;
+    text-align: center;
+    margin-top: 0.5em;
+    font-style: italic;
+}
 
 /* Responsive Design */
 @media screen and (min-width: 40em) {
@@ -170,6 +333,18 @@ div.newsletter p {
     div.newsletter {
         max-width: 60em;
         margin: auto;
+        background-color: #F0F0F0; /* Light Grey Background */
+        padding: 2em;
+        border-radius: 0.5em;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    div.newsletter .newsletter-content {
+        text-align: center;
     }
 
     header, footer {
@@ -207,6 +382,14 @@ div.newsletter p {
     section.main-story a img {
         width: 100%;
         height: auto;
+    }
+
+    nav ul li a {
+        font-size: 1.4em; /* Increased font size for larger screens */
+    }
+
+    .subscribe-button {
+        float: right; /* Align to the right */
     }
 }
 
