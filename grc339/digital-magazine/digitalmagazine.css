@@ -175,28 +175,26 @@ footer p {
 main.photo-gallery {
     position: relative;
     overflow: hidden;
-    padding-bottom: calc(60% + 8em);
-}
-
-h2.photo-gallery {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.3em;
-    padding-top: 1em;
-    margin-bottom: 1em;
-    color: #002244; /* Navy Blue */
+    padding: 0; /* Remove padding to ensure images are full size */
+    height: 100vh; /* Set the height to the full viewport height or desired height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main.photo-gallery figure {
     margin: 0;
-    width: calc(100%-2em);
+    width: 100%; /* Ensure the figure takes the full width */
+    height: 100%; /* Ensure the figure takes the full height */
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s;
 }
 
 main.photo-gallery img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Make images fill the container */
+    height: 100%; /* Make images fill the container */
+    object-fit: cover; /* Ensure the image covers the area, maintaining aspect ratio */
 }
 
 main.photo-gallery figcaption {
