@@ -62,7 +62,7 @@ div.newsletter {
 
 div.photo-gallery {
     max-width: 100%;
-    margin: 2em auto;
+    margin: 2em 0;
     padding: 0 1em;
     background-color: #f8f8f8; /* Light Grey Background for the Gallery */
     grid-column: 1; /* Align to the left column */
@@ -70,7 +70,7 @@ div.photo-gallery {
 
 article.main-story {
     max-width: 100%;
-    margin: 2em auto;
+    margin: 2em 0;
     padding: 0 1em;
     grid-column: 2; /* Center in the right column */
 }
@@ -162,7 +162,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 2em; /* Increase spacing between nav items */
+    margin-right: 2em; /* Increased spacing between nav items */
 }
 
 nav ul li a {
