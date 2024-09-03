@@ -61,10 +61,12 @@ div.newsletter {
 }
 
 div.photo-gallery {
-    max-width: 100%;
+    max-width: 60em; /* Match width of secondary stories */
     margin: 2em auto;
-    padding: 0 1em;
-    background-color: #f8f8f8; /* Light Grey Background for the Gallery */
+    padding: 2em; /* Match padding */
+    background-color: #F0F0F0; /* Light Grey Background for the Gallery, similar to secondary stories */
+    border-radius: 0.5em; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Consistent shadow */
 }
 
 /* Text and Typography */
@@ -193,7 +195,10 @@ footer p {
 main.photo-gallery {
     position: relative;
     overflow: hidden;
-    padding-bottom: calc(60% + 8em);
+    padding: 2em; /* Match padding of secondary stories */
+    background-color: #F0F0F0; /* Light Grey Background for consistency */
+    border-radius: 0.5em; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Consistent shadow */
 }
 
 h2.photo-gallery {
@@ -205,7 +210,7 @@ h2.photo-gallery {
 
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Larger images */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1em;
 }
 
@@ -223,26 +228,6 @@ h2.photo-gallery {
 
 .gallery-container img:hover {
     transform: scale(1.05);
-}
-
-/* View Gallery Button */
-.view-gallery-button {
-    display: inline-block;
-    padding: 1em 2em;
-    font-size: 1.5em; /* Larger font size */
-    font-weight: bold;
-    color: #FFFFFF;
-    background-color: #002244; /* Navy Blue */
-    border: none;
-    border-radius: 0.5em;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.view-gallery-button:hover {
-    background-color: #003366; /* Darker Navy Blue */
-    transform: scale(1.05); /* Slightly larger on hover */
 }
 
 /* Responsive Design */
